@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: yellowgreen;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock{
+    background-color: rgb(255,255,255, 0.8);
+    width: 300px;
+    height: 300px;
+    border: 2px solid black;
+    border-radius: 50%;
+    position: relative;
+}
+
+.clock .number {
+    --rotation: 0;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    transform: rotate(calc(var(--rotation) * 1deg));
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+/* CHANGING THE VALUE OF ROTATION TO POSITION EACH NUMBER TO ITS EXACT PLACE IN A CLOCK */
+.clock .number1 {
+    --rotation: 30
+}
+.clock .number2 {
+    --rotation: 60
+}
+.clock .number3 {
+    --rotation: 90
+}
+.clock .number4 {
+    --rotation: 120
+}
+.clock .number5 {
+    --rotation: 150
+}
+.clock .number6 {
+    --rotation: 180
+}
+.clock .number7 {
+    --rotation: 210
+}
+.clock .number8 {
+    --rotation: 240
+}
+.clock .number9 {
+    --rotation: 270
+}
+.clock .number10 {
+    --rotation: 300
+}
+.clock .number11 {
+    --rotation: 330
+}
+
+.center-dot{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    border-radius: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hand {
+    --rotation: 0;
+    position: absolute;
+    width: 10px;
+    height: 40%;
+    background-color: black;
+    left: 50%;
+    bottom: 50%;
+    transform: translateX(-50%) rotate(calc(var(--rotation) * 1deg));
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border: 1px solid yellowgreen;
+    transform-origin: bottom;
+}
+
+.hour{
+    width: 10px;
+    height: 40%;
+
+}
+
+.minute {
+    width: 5px;
+    height: 40%;
+}
+
+.seconds {
+    width: 2px;
+    height: 40%;
+    background-color: red;
+
+
+}
+
