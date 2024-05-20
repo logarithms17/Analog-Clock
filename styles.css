@@ -20,6 +20,7 @@ body {
     border: 2px solid black;
     border-radius: 50%;
     position: relative;
+    background-image: url(./images/OIP.jpeg);
 }
 
 .clock .number {
@@ -31,6 +32,7 @@ body {
     transform: rotate(calc(var(--rotation) * 1deg));
     font-weight: bold;
     font-size: 1.5rem;
+    color: white;
 }
 
 /* CHANGING THE VALUE OF ROTATION TO POSITION EACH NUMBER TO ITS EXACT PLACE IN A CLOCK */
